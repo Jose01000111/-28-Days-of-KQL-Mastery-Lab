@@ -10,6 +10,4 @@
 
 ## [👉📝Daily Lab Notes](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/21-Days-of-KQL_Notes.pdf)
 
----
-
 ## [👉📝Daily Lab Instructions](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/KQL_EDR_21_Day_Lab.pdf)
