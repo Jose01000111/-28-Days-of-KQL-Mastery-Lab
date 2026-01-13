@@ -9,3 +9,5 @@
 > ## I am practicing this 21-day KQL Starter+ lab inside Josh Madakor’s Cyber Range 🖥️, working hands-on with EDR telemetry from an internet-exposed Windows VM. The focus is on building practical KQL hunting skills 🔍 using Microsoft Sentinel 🛡️ and Microsoft Defender for Endpoint 💻 to investigate activity, detect threats, and understand real-world security workflows in a controlled lab environment.
 
 ## [👉📝Daily Lab notes](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/21-Days-of-KQL_Notes.pdf)
+
+## [👉📝Daily Lab notes]()
