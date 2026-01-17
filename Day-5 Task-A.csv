@@ -1,0 +1,51 @@
+﻿Timestamp,DeviceName,FileName,ProcessCommandLine
+1/16/2026 18:33,sandboxvm,SearchProtocolHost.exe,"""SearchProtocolHost.exe"" Global\UsGthrFltPipeMssGthrPipe9_ Global\UsGthrCtrlFltPipeMssGthrPipe9 1 -2147483646 ""Software\Microsoft\Windows Search"" ""Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)"" ""C:\ProgramData\Microsoft\Search\Data\Temp\usgthrsvc"" ""DownLevelDaemon"" "
+1/16/2026 18:32,og-corpeast-3,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:32,og-corpeast-3,gc_worker.exe,gc_worker.exe -a WindowsDefenderExploitGuard -c NonCompliant -s inguest -g https://eastus2-gas.guestconfiguration.azure.com/virtualMachines/02537db2-2245-4429-b2b4-8958db3351d8
+1/16/2026 18:31,kobe24,MpCmdRun.exe,"""MpCmdRun.exe"" GetDeviceTicket -AccessKey 2B22A01E-B84F-DE8D-A8B1-469A35CD406F "
+1/16/2026 18:31,windows-11-pro-,StoreDesktopExtension.exe,"""StoreDesktopExtension.exe"" -Embedding"
+1/16/2026 18:31,jinks-server-fi,ARP.EXE,arp.exe  -a 
+1/16/2026 18:31,jinks-server-fi,ipconfig.exe,ipconfig.exe  /displaydns 
+1/16/2026 18:31,jinks-server-fi,nbtstat.exe,nbtstat.exe  -s 
+1/16/2026 18:31,jinks-server-fi,nbtstat.exe,nbtstat.exe  -S  
+1/16/2026 18:31,jinks-server-fi,nbtstat.exe,nbtstat.exe  -c  
+1/16/2026 18:31,jinks-server-fi,nbtstat.exe,nbtstat.exe  -n  
+1/16/2026 18:31,irene-test-vm-m,cvtres.exe,"cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 ""/OUT:C:\Windows\SystemTemp\RES1082.tmp"" ""c:\Windows\SystemTemp\r2xa2wxg\CSCE582D8EDA422428CAAC7E727B11C609E.TMP"""
+1/16/2026 18:31,jinks-server-fi,net1.exe,net1  sessions 
+1/16/2026 18:31,jinks-server-fi,net.exe,net.exe  sessions 
+1/16/2026 18:31,irene-test-vm-m,csc.exe,"""csc.exe"" /noconfig /fullpaths @""C:\Windows\SystemTemp\r2xa2wxg\r2xa2wxg.cmdline"""
+1/16/2026 18:31,jinks-server-fi,RuntimeBroker.exe,RuntimeBroker.exe -Embedding
+1/16/2026 18:31,jinks-server-fi,backgroundTaskHost.exe,"""BackgroundTaskHost.exe"" -ServerName:BackgroundTaskHost.WebAccountProvider"
+1/16/2026 18:31,kjvm1,StoreDesktopExtension.exe,"""StoreDesktopExtension.exe"" -Embedding"
+1/16/2026 18:31,kjvm1,StoreDesktopExtension.exe,"""StoreDesktopExtension.exe"" -Embedding"
+1/16/2026 18:31,kjvm1,MicrosoftEdgeUpdate.exe,"""MicrosoftEdgeUpdate.exe"" /ua /installsource scheduler"
+1/16/2026 18:31,windows-target-,taskhostw.exe,taskhostw.exe USER
+1/16/2026 18:30,irene-test-vm-m,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:30,irene-test-vm-m,powershell.exe,"powershell.exe -ExecutionPolicy AllSigned -NoProfile -NonInteractive -Command ""& {if ($ExecutionContext.SessionState.LanguageMode -eq 'FullLanguage') {$OutputEncoding = [Console]::OutputEncoding =[System.Text.Encoding]::UTF8}else {chcp 65001}; &  'C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection\8809.14538576.0.14538576-8d2440cf6f4650cd003cf316c643778c9b43bd76\2d76cc84-8291-481d-845d-62f59f16e445.ps1' }"""
+1/16/2026 18:30,irene-test-vm-m,SenseIR.exe,"""SenseIR.exe"" ""OfflineSenseIR"" ""4056"" ""eyJDb21tYW5kSWQiOiIiLCJEb3dubG9hZEZpbGVBY3Rpb25Db25maWciOm51bGwsIkRvd25sb2FkVHJ1c3RlZENlcnRpZmljYXRlc0NoYWlucyI6bnVsbCwiRW5hYmxlU2xlZXBTdXNwZW5zaW9uIjowLCJNYXhXYWl0Rm9yTmV3QWN0aW9uc0luTXMiOjEyNjAwMDAsIk9yZ0lkIjoiIiwiUnVuUHNTY3JpcHRBY3Rpb25Db25maWciOnsiZW5hYmxlIjp0cnVlfSwiYWNjZXB0U2ltdWxhdG9yU2lnbmluZyI6MCwib2ZmbGluZUlyUGlwZUhhbmRsZSI6MTExNn0="""
+1/16/2026 18:30,jinks-server-fi,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:30,sandboxvm,taskhostw.exe,taskhostw.exe Event
+1/16/2026 18:30,jinks-server-fi,powershell.exe,"powershell  -Command ""& {$j = sajb {Add-Type -AssemblyName System.IO.Compression.FileSystem; $d = $pwd.Drive; $jars = ls -Path \""${d}:\Program Files\"",\""${d}:\Users\"",\""${d}:\Documents and Settings\"" -Recurse -Depth 10 -Filter *.jar -EA SilentlyContinue; foreach ($jar in $jars){ $f = $jar.FullName; $p = 'spring.*\.jar'; if($jar.Name -match $p){$f} else { $items = try{[IO.Compression.ZipFile]::OpenRead($f).Entries.FullName;} catch{continue;} foreach ($item in $items){ if($item -match $p){ \""${f}:${item}\"" }}}}}; $r = wjb $j -Timeout 270; rcjb $j;}""  "
+1/16/2026 18:30,wvm-edr-target,WmiPrvSE.exe,wmiprvse.exe -secured -Embedding
+1/16/2026 18:30,wvm-edr-target,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:30,wvm-edr-target,driverquery.exe,"""driverquery"" /FO CSV /NH /V"
+1/16/2026 18:30,wvm-edr-target,cvtres.exe,"cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 ""/OUT:C:\Windows\SystemTemp\RES7211.tmp"" ""c:\Windows\SystemTemp\ff2fvyjh\CSCBFC221B78CCD4A2CA61654AEFAE17F2.TMP"""
+1/16/2026 18:30,wvm-edr-target,csc.exe,"""csc.exe"" /noconfig /fullpaths @""C:\Windows\SystemTemp\ff2fvyjh\ff2fvyjh.cmdline"""
+1/16/2026 18:30,wvm-edr-target,cvtres.exe,"cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 ""/OUT:C:\Windows\SystemTemp\RES6B6A.tmp"" ""c:\Windows\SystemTemp\1zdvipgu\CSC3060770034CF4BA1BBA26F6DD2FB0E8.TMP"""
+1/16/2026 18:30,wvm-edr-target,csc.exe,"""csc.exe"" /noconfig /fullpaths @""C:\Windows\SystemTemp\1zdvipgu\1zdvipgu.cmdline"""
+1/16/2026 18:30,wvm-edr-target,WmiPrvSE.exe,wmiprvse.exe -secured -Embedding
+1/16/2026 18:29,jinks-server-fi,powershell.exe,"powershell.exe  -Command ""Write-Output 'psworks'""  "
+1/16/2026 18:29,windows-target-,WmiPrvSE.exe,wmiprvse.exe -secured -Embedding
+1/16/2026 18:29,og-corpeast-3,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:29,og-corpeast-3,cmd.exe,cmd.exe
+1/16/2026 18:29,wvm-edr-target,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:29,wvm-edr-target,powershell.exe,"powershell.exe -ExecutionPolicy AllSigned -NoProfile -NonInteractive -Command ""& {if ($ExecutionContext.SessionState.LanguageMode -eq 'FullLanguage') {$OutputEncoding = [Console]::OutputEncoding =[System.Text.Encoding]::UTF8}else {chcp 65001}; &  'C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection\8809.14538576.0.14538576-8d2440cf6f4650cd003cf316c643778c9b43bd76\cb99f1a7-ed1b-4385-a407-7f6229cd6a3b.ps1' }"""
+1/16/2026 18:29,wvm-edr-target,SenseIR.exe,"""SenseIR.exe"" ""OfflineSenseIR"" ""3988"" ""eyJDb21tYW5kSWQiOiIiLCJEb3dubG9hZEZpbGVBY3Rpb25Db25maWciOm51bGwsIkRvd25sb2FkVHJ1c3RlZENlcnRpZmljYXRlc0NoYWlucyI6bnVsbCwiRW5hYmxlU2xlZXBTdXNwZW5zaW9uIjowLCJNYXhXYWl0Rm9yTmV3QWN0aW9uc0luTXMiOjEyNjAwMDAsIk9yZ0lkIjoiIiwiUnVuUHNTY3JpcHRBY3Rpb25Db25maWciOnsiZW5hYmxlIjp0cnVlfSwiYWNjZXB0U2ltdWxhdG9yU2lnbmluZyI6MCwib2ZmbGluZUlyUGlwZUhhbmRsZSI6MTY4MH0="""
+1/16/2026 18:29,jinks-server-fi,powershell.exe,"powershell.exe  -Command ""Get-WindowsFeature | Where {$_.Name -like 'ADCS*'} | SELECT 'InstallState' | Format-List""  "
+1/16/2026 18:29,jinks-server-fi,WmiPrvSE.exe,wmiprvse.exe -Embedding
+1/16/2026 18:29,og-corpeast-3,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:29,og-corpeast-3,CollectGuestLogs.exe,"""CollectGuestLogs.exe"" -Mode:ga -FileName:D:\CollectGuestLogsTemp\VMAgentLogs.zip"
+1/16/2026 18:29,og-corpeast-3,conhost.exe,conhost.exe 0xffffffff -ForceV1
+1/16/2026 18:29,og-corpeast-3,FindVolume.exe,"""FindVolume.exe"" /label ""Temporary Storage"""
+1/16/2026 18:29,jinks-server-fi,powershell.exe,"powershell.exe  -Command ""Get-WindowsFeature | Where {$_.Name -eq 'WINS'} | SELECT 'InstallState' | Format-List""  "
+1/16/2026 18:29,jinks-server-fi,auditpol.exe,auditpol  /get /Category:* /r  
