@@ -25,10 +25,10 @@
 > 💻 EDR: `DeviceProcessEvents | take 30`  
 > 🔍 KQL: `DeviceProcessEvents | project Timestamp, DeviceName, FileName | take 30`  
 
-## 🟢 Task A: Recent Process Execution Activity
+## 🟢 Task A: Recent Process Execution Activity ### [Day 1 Task A (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-1%20Task-A.csv)
 <img width="881" height="203" alt="GUNuVWP" src="https://github.com/user-attachments/assets/d32b5fd2-845f-492f-8794-acba5f480809" />
 
-## 🟢 Task B: Key Process Fields Visibility
+## 🟢 Task B: Key Process Fields Visibility ### [Day 1 Task B (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-1%20Task-B.csv)
 <img width="903" height="458" alt="vQdBJu0" src="https://github.com/user-attachments/assets/4b7dfbb9-96e8-4c9b-9479-2b07ed0e709e" />
 
 ### 📝 Notes
@@ -48,10 +48,10 @@
 > ⏱️ EDR: `DeviceProcessEvents | where Timestamp > ago(24h)`  
 > 🔍 KQL: `DeviceProcessEvents | where Timestamp > ago(1h)`
 > 
-## ⏰ Task A: Process Activity (Last 24 Hours)
+## ⏰ Task A: Process Activity (Last 24 Hours) ### [Day 2 Task A (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-2%20Task-A.csv)
 <img width="973" height="218" alt="nZh4WYZ" src="https://github.com/user-attachments/assets/077fadb2-8030-4a3b-8e2d-984f1ebde32d" />
 
-## ⏰ Task B: Process Activity (Last 1 Hour)
+## ⏰ Task B: Process Activity (Last 1 Hour) ### [Day 2 Task B (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-2%20Task-B.csv)
 <img width="972" height="550" alt="upnuJEI" src="https://github.com/user-attachments/assets/97a08de0-e7c8-49f1-83e1-e1f434c594ee" />
 
 ### 📝 Notes
@@ -71,10 +71,10 @@
 > 📊 EDR: `DeviceProcessEvents | summarize Count=count() by FileName | order by Count desc`  
 > 🔍 KQL: `DeviceProcessEvents | summarize Count=count() by DeviceName`
 
-## 📊 Task A: Most Frequently Executed Processes
+## 📊 Task A: Most Frequently Executed Processes ### [Day 3 Task A (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-3%20Task-A.csv)
 <img width="771" height="211" alt="zBcTkmy" src="https://github.com/user-attachments/assets/343c9cb1-c366-4a22-bf9f-213576b85a90" />
 
-## 📊 Task B: Process Activity Volume per Device
+## 📊 Task B: Process Activity Volume per Device ### [Day 3 Task B (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-3%20Task-B.csv)
 <img width="947" height="505" alt="od6T3Aq" src="https://github.com/user-attachments/assets/94431256-5b73-4b5c-b729-d287aaf583b9" />
 
 ### 📝 Notes
@@ -94,10 +94,10 @@
 > ⚠️ EDR: `DeviceProcessEvents | where FileName == "powershell.exe"`  
 > 🔍 KQL: `DeviceProcessEvents | where FileName == "cmd.exe"`  
 
-## ⚡ Task A: PowerShell Execution Activity
+## ⚡ Task A: PowerShell Execution Activity ### [Day 4 Task A (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-4%20Taks-A.csv)
 <img width="947" height="505" alt="od6T3Aq" src="https://github.com/user-attachments/assets/ccd0e118-48a0-4d6d-b2bb-051a0859a973" />
 
-## ⚡ Task B: Command Prompt Execution Activity
+## ⚡ Task B: Command Prompt Execution Activity ### [Day 4 Task B (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-4%20Task-B.csv)
 <img width="971" height="513" alt="ntap5DX" src="https://github.com/user-attachments/assets/bc2b861d-d2e6-485a-a8e8-e03014d01e70" />
 
 ### 📝 Notes
@@ -117,10 +117,10 @@
 > 🧩 EDR: `DeviceProcessEvents | project Timestamp, DeviceName, FileName, ProcessCommandLine`  
 > 🔍 KQL: `DeviceProcessEvents | project FileName, ParentProcessName, AccountName`  
 
-## 🖥️ Task A: Process Command-Line Context
+## 🖥️ Task A: Process Command-Line Context ### [Day 5 Task A (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-5%20Task-A.csv)
 <img width="977" height="567" alt="lBZATn5" src="https://github.com/user-attachments/assets/61170453-0ae7-41ff-a05a-3a0068394cde" />
 
-## 🖥️ Task B: Parent Process and User Context
+## 🖥️ Task B: Parent Process and User Context ### [Day 5 Task B (CSV)](https://github.com/Jose01000111/21-Days-of-KQL_EDR-Starter-Lab/blob/main/Day-5%20Task-B.csv)
 <img width="673" height="233" alt="09JrYKs" src="https://github.com/user-attachments/assets/e23755b0-6d97-41c7-a85d-7a312b8a13d7" />
 
 ### 📝 Notes
